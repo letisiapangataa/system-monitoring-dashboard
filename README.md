@@ -57,6 +57,35 @@ This project simulates a real-world infrastructure observability stack tailored 
 
 ---
 
+
+---
+
+## 🚀 Getting Started: Running the System Metrics Exporter
+
+1. **Install Python dependencies:**
+   ```
+   pip install psutil requests
+   ```
+
+2. **Start Prometheus Pushgateway** (default: http://localhost:9091)
+
+3. **Run the exporter script:**
+   ```
+   python scripts/system_metrics_exporter.py
+   ```
+   The script will export system metrics every 15 seconds. Stop it anytime with `Ctrl+C`.
+
+4. **Prometheus configuration:**
+   Ensure your `configs/prometheus.yml` includes:
+   ```yaml
+   scrape_configs:
+     - job_name: 'system_metrics'
+       static_configs:
+         - targets: ['localhost:9091']
+   ```
+
+---
+
 ## 📄 License
 
 MIT License
