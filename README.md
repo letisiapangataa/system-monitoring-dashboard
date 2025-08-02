@@ -1,25 +1,25 @@
-# 📊 System Monitoring Dashboard
+# System Monitoring Dashboard
 
 A custom system monitoring and alerting solution built to track infrastructure health, performance metrics, and security events in real-time. This lab demonstrates full-stack observability using Python, Prometheus, InfluxDB, and Grafana.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project simulates a real-world infrastructure observability stack tailored for system engineers and administrators. It includes real-time monitoring, historical analysis, alerting workflows, and security event correlation.
 
 ---
 
-## 🛠️ Key Highlights
+## Key Highlights
 
-- ⚙️ **Real-Time Performance Monitoring**: Tracks CPU, memory, disk, and network usage.
-- 🚨 **Custom Alerting Workflows**: Sends notifications based on thresholds for performance or security anomalies.
-- 📈 **Historical Data Analysis**: Stores time-series data for long-term performance insights.
-- 🛡️ **Security Event Correlation**: Analyzes log patterns and correlates with system behavior to detect suspicious activity.
+- **Real-Time Performance Monitoring**: Tracks CPU, memory, disk, and network usage.
+- **Custom Alerting Workflows**: Sends notifications based on thresholds for performance or security anomalies.
+- **Historical Data Analysis**: Stores time-series data for long-term performance insights.
+- **Security Event Correlation**: Analyzes log patterns and correlates with system behavior to detect suspicious activity.
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 | Technology     | Purpose                                    |
 |----------------|--------------------------------------------|
@@ -30,7 +30,7 @@ This project simulates a real-world infrastructure observability stack tailored 
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Folder        | Contents                                         |
 |---------------|--------------------------------------------------|
@@ -41,7 +41,7 @@ This project simulates a real-world infrastructure observability stack tailored 
 
 ---
 
-## 🧪 Example Use Case
+## Example Use Cases (Review)
 
 - Prometheus scrapes metrics from system exporters and custom scripts.
 - Grafana displays metrics on real-time dashboards.
@@ -51,7 +51,7 @@ This project simulates a real-world infrastructure observability stack tailored 
 
 ---
 
-## 📷 Dashboard Preview
+## Dashboard Preview
 
 ![Grafana Dashboard](dashboards/grafana-dashboard.png)
 
@@ -60,7 +60,7 @@ This project simulates a real-world infrastructure observability stack tailored 
 
 ---
 
-## 🚀 Getting Started: Running the System Metrics Exporter
+## Getting Started: Running the System Metrics Exporter
 
 1. **Install Python dependencies:**
    ```
@@ -86,7 +86,7 @@ This project simulates a real-world infrastructure observability stack tailored 
 
 ---
 
-## 📄 License
+## License
 
 MIT License
 
