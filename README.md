@@ -51,15 +51,6 @@ This project simulates a real-world infrastructure observability stack tailored 
 
 ---
 
-## Dashboard Preview
-
-![Grafana Dashboard](dashboards/grafana-dashboard.png)
-
----
-
-
----
-
 ## Getting Started: Running the System Metrics Exporter
 
 1. **Install Python dependencies:**
