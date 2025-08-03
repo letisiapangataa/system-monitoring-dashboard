@@ -92,7 +92,7 @@ MIT License
 
 ---
 
-## 📚 References
+## References
 
 - [Grafana Documentation](https://grafana.com/docs/)
 - [Prometheus Docs](https://prometheus.io/docs/)
