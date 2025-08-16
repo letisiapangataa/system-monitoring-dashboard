@@ -1,8 +1,6 @@
-# System Monitoring Dashboard
+# 💻 System Monitoring Dashboard (ALP)
 
-A system monitoring and alerting solution built to track infrastructure health, performance metrics, and security events in real-time. 
-
-This lab demonstrates full-stack observability using Python, Prometheus, InfluxDB, and Grafana.
+A system monitoring and alerting solution built to track infrastructure health, performance metrics, and security events in real-time. This lab demonstrates full-stack observability using Python, Prometheus, InfluxDB, and Grafana.
 
 ---
 

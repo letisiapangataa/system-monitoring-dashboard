@@ -2,7 +2,7 @@ import psutil
 import time
 import requests
 
-PROMETHEUS_PUSHGATEWAY = 'http://localhost:9091/metrics/job/system_metrics'
+PROMETHEUS_PUSHGATEWAY = 'http://localhost:9091/metrics/job/system_metrics/instance/localhost'
 
 # Prometheus metric names should use snake_case and units where possible
 METRIC_NAMES = {
@@ -31,13 +31,14 @@ def format_prometheus(metrics):
     for k, v in metrics.items():
         metric_name = METRIC_NAMES.get(k, k)
         lines.append(f"{metric_name} {v}")
-    return '\n'.join(lines)
+    return '\n'.join(lines) + '\n'
 
 def push_metrics(metrics):
     """Push metrics to Prometheus Pushgateway with error handling."""
     data = format_prometheus(metrics)
+    headers = {'Content-Type': 'text/plain'}
     try:
-        resp = requests.post(PROMETHEUS_PUSHGATEWAY, data=data)
+        resp = requests.put(PROMETHEUS_PUSHGATEWAY, data=data, headers=headers)
         resp.raise_for_status()
     except requests.RequestException as e:
         print(f"Failed to push metrics: {e}")
